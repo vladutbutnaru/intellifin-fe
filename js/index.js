@@ -1,7 +1,7 @@
 var loadNotifications = function(){
       $.ajax({
             type: "GET",
-            url: 'http://localhost:9393/rest/notifications/list',
+            url: 'http://167.99.248.187:9393/rest/notifications/list',
             async: false,
             headers: {
                 "Authentication": getCookie("Token")
@@ -42,7 +42,7 @@ var verifyToken = function () {
     if (getCookie("Token") != null && getCookie("Token") != "") {
         $.ajax({
             type: "GET",
-            url: 'http://localhost:9393/rest/users/info',
+            url: 'http://167.99.248.187:9393/rest/users/info',
             async: false,
             headers: {
                 "Authentication": getCookie("Token")

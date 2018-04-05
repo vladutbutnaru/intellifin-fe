@@ -1,5 +1,5 @@
 var populateCities = function () {
-    $.get("http://localhost:9393/rest/cities/list", {}, function (response) {
+    $.get("http://167.99.248.187:9393/rest/cities/list", {}, function (response) {
         for (var i = 0; i < response.length; i++) {
             $("#city-input").append(new Option(response[i].name, response[i].id));
         }
@@ -49,7 +49,7 @@ var submitRegistration = function () {
     $.ajax({
         type: "POST",
         //the url where you want to sent the userName and password to
-        url: 'http://localhost:9393/rest/users/register',
+        url: 'http://167.99.248.187:9393/rest/users/register',
         dataType: 'json',
         contentType: 'application/json',
         async: false,

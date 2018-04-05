@@ -6,7 +6,7 @@ var performLogin = function () {
 
     $.ajax({
         type: "POST",
-        url: 'http://localhost:9393/rest/users/login',
+        url: 'http://167.99.248.187:9393/rest/users/login',
         async: false,
         data: {
             "email": email,
