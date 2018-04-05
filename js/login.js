@@ -15,7 +15,7 @@ var performLogin = function () {
         success: function (response) {
             if (response.message == "OK"){
                 setCookie("Token",response.token,1);
-                location.href="index3.html";
+                location.href="index.html";
             }
             else
                 alert("Date incorecte!");
