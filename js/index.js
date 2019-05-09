@@ -64,5 +64,5 @@ var verifyToken = function () {
 
 };
 
-verifyToken();
+//verifyToken();
 

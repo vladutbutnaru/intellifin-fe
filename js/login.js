@@ -24,3 +24,9 @@ var performLogin = function () {
 
 
 };
+
+var performLoginMock = function(){
+    location.href="index.html";
+
+
+};
