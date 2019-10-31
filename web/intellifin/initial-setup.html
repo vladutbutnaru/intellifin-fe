@@ -630,45 +630,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                         <!--end::Portlet-->
                                                         <!--begin: intellifamily member placehonder-->
 
-                                                        <div class="kt-portlet__body" id="member-1-placeholder"
-                                                            style="margin-top:20px;">
-
-                                                            <!--begin::Widget -->
-                                                            <div class="kt-widget kt-widget--user-profile-2">
-                                                                <div class="kt-widget__head">
-                                                                    <div class="kt-widget__media">
-                                                                        <img class="kt-hidden"
-                                                                            src="./assets/media/users/100_1.jpg"
-                                                                            alt="image">
-                                                                        <div class="kt-widget__pic kt-widget__pic--info kt-font-info kt-font-boldest  kt-hidden-"
-                                                                            id="init-intellifamily-placeholder-initials">
-                                                                            GF
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="kt-widget__info">
-                                                                        <a href="#" class="kt-widget__username"
-                                                                            id="init-intellifamily-placeholder-fullname">
-                                                                            Gigel Frone
-                                                                        </a>
-                                                                        <span class="kt-widget__desc">
-                                                                            Membru IntelliFamily
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="kt-widget__body">
-                                                                    <div class="kt-widget__section">
-
-                                                                    </div>
-
-                                                                </div>
-                                                                <div class="kt-widget__footer">
-                                                                    <button type="button"
-                                                                        class="btn btn-label-brand btn-lg btn-upper">elimina</button>
-                                                                </div>
-                                                            </div>
-
-                                                            <!--end::Widget -->
-                                                        </div>
+                                                      <div id="placeholder-intellifamly"></div>
                                                         <!--end: intellifamily member placehonder-->
                                                     </div>
                                                 </div>
@@ -732,8 +694,8 @@ License: You must have a valid license purchased only from themeforest(the above
                                                                 <div class="form-group">
                                                                     <label>Numele Contului</label>
                                                                     <input type="text" class="form-control"
-                                                                        name="ccmonth" placeholder="Prenume"
-                                                                        value="test account">
+                                                                        name="ccmonth" placeholder="Nume Cont"
+                                                                        value="" id="init-account-name">
                                                                     <span class="form-text text-muted">Ex. Cont Curent
                                                                         ING</span>
                                                                 </div>
@@ -777,14 +739,14 @@ License: You must have a valid license purchased only from themeforest(the above
                                                                     <label>Sold Initial</label>
                                                                     <input type="number" class="form-control"
                                                                         name="ccmonth" placeholder="Sold Initial"
-                                                                        value="0.0">
+                                                                        value="0.0" id="initial-balance">
                                                                     <span class="form-text text-muted">Soldul actual al
                                                                         contului.</span>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <label>Moneda contului</label>
 
-                                                                    <select class="form-control" id="init-city">
+                                                                    <select class="form-control" id="account-currency">
                                                                         <option>RON</option>
                                                                         <option>USD</option>
                                                                         <option>EUR</option>
@@ -801,47 +763,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
                                                     </div>
 
-                                                    <!--begin: intellifamily member placehonder-->
-
-                                                    <div class="kt-portlet__body" id="account-1-placeholder"
-                                                        style="margin-top:20px;">
-
-                                                        <!--begin::Widget -->
-                                                        <div class="kt-widget kt-widget--user-profile-2">
-                                                            <div class="kt-widget__head">
-                                                                <div class="kt-widget__media">
-                                                                    <img class="kt-hidden"
-                                                                        src="./assets/media/users/100_1.jpg"
-                                                                        alt="image">
-                                                                    <div
-                                                                        class="kt-widget__pic kt-widget__pic--info kt-font-info kt-font-boldest  kt-hidden-">
-                                                                        TA
-                                                                    </div>
-                                                                </div>
-                                                                <div class="kt-widget__info">
-                                                                    <a href="#" class="kt-widget__username">
-                                                                        Test Account
-                                                                    </a>
-                                                                    <span class="kt-widget__desc">
-                                                                        Cont Bancar Curent - 10.000 RON
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                            <div class="kt-widget__body">
-                                                                <div class="kt-widget__section">
-
-                                                                </div>
-
-                                                            </div>
-                                                            <div class="kt-widget__footer">
-                                                                <button type="button"
-                                                                    class="btn btn-label-brand btn-lg btn-upper">elimina</button>
-                                                            </div>
-                                                        </div>
-
-                                                        <!--end::Widget -->
-                                                    </div>
-                                                    <!--end: intellifamily member placehonder-->
+                                                   <div id="placeholder-accounts"></div>
                                                 </div>
 
                                             </div>
@@ -938,9 +860,9 @@ License: You must have a valid license purchased only from themeforest(the above
                                                                 Despre tine
                                                             </div>
                                                             <div class="kt-wizard-v2__review-content">
-                                                                John Wick<br />
-                                                                Phone: +61412345678<br />
-                                                                Email: johnwick@reeves.com
+                                                                <span id="final-step-name">Vlad Butnaru</span><br />
+                                                                <span id="final-step-phone">Telefon: +61412345678</span><br />
+                                                                <span id="final-step-email">Email: vlad2me@gmail.com</span>
                                                             </div>
                                                         </div>
                                                         <div class="kt-wizard-v2__review-item">
@@ -948,9 +870,8 @@ License: You must have a valid license purchased only from themeforest(the above
                                                                 IntelliFamily
                                                             </div>
                                                             <div class="kt-wizard-v2__review-content">
-                                                                Address Line 1<br />
-                                                                Address Line 2<br />
-                                                                Melbourne 3000, VIC, Australia
+                                                                <span>Gigel Frone - gigel@frone.ro</span><br />
+                                                                <span>Gigica Frone - gigica@frone.ro</span><br />                                                               
                                                             </div>
                                                         </div>
                                                         <div class="kt-wizard-v2__review-item">
@@ -958,28 +879,16 @@ License: You must have a valid license purchased only from themeforest(the above
                                                                 Conturi si balante
                                                             </div>
                                                             <div class="kt-wizard-v2__review-content">
-                                                                Overnight Delivery with Regular Packaging<br />
-                                                                Preferred Morning (8:00AM - 11:00AM) Delivery
+                                                               <span>Test Account</span><br />
+                                                               <span>Test Account 2</span>
                                                             </div>
                                                         </div>
                                                         <div class="kt-wizard-v2__review-item">
                                                             <div class="kt-wizard-v2__review-title">
-                                                                Module alese
+                                                                Pachet ales
                                                             </div>
                                                             <div class="kt-wizard-v2__review-content">
-                                                                Address Line 1<br />
-                                                                Address Line 2<br />
-                                                                Preston 3072, VIC, Australia
-                                                            </div>
-                                                        </div>
-                                                        <div class="kt-wizard-v2__review-item">
-                                                            <div class="kt-wizard-v2__review-title">
-                                                                Payment Details
-                                                            </div>
-                                                            <div class="kt-wizard-v2__review-content">
-                                                                Card Number: xxxx xxxx xxxx 1111<br />
-                                                                Card Name: John Wick<br />
-                                                                Card Expiry: 01/21
+                                                                IntelliActive
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1171,61 +1080,101 @@ License: You must have a valid license purchased only from themeforest(the above
     <!--begin::Page Scripts(used by this page) -->
     <script src="./assets/js/intellifin/initial-setup.js" type="text/javascript"></script>
     <!--end::Page Scripts -->
+	<script>
+		/* STEP 2 */
+$('#new-member-1').hide();
+$('#member-1-placeholder').hide();
+var showAddMember = function () {
+    $('#new-member-1').show();
+    $('#add-new-member-intellifamily').hide();
 
-    <script>
+};
 
-        /* STEP 2 */
-        $('#new-member-1').hide();
-        $('#member-1-placeholder').hide();
-        var showAddMember = function () {
-            $('#new-member-1').show();
-            $('#add-new-member-intellifamily').hide();
+var numberOfAddedMembers = 0;
+var addMember = function () {
+    $('#new-member-1').hide();
 
-        };
-
-        var addMember = function () {
-            $('#new-member-1').hide();
-            $('#member-1-placeholder').show();
-            $('#add-new-member-intellifamily').show();
-            $('#init-intellifamily-placeholder-initials').html($('#init-intellifamily-fname').val().charAt(0) + $('#init-intellifamily-lname').val().chartAt(0));
-            $('#init-intellifamily-placeholder-fullname').html($('#init-intellifamily-fname').val() + " " + $('#init-intellifamily-lname').val());
-
-        };
-
-        /* STEP 3 */
-        $('#new-account-1').hide();
-        $('#iban').hide();
-        $('#issuing-bank').hide();
-        $('#account-1-placeholder').hide();
-
-        var showAddAccount = function () {
-            $('#new-account-1').show();
-            $('#add-new-account').hide();
-
-        };
-
-        var addAccount = function () {
-            $('#new-account-1').hide();
-            $('#add-new-account').show();
-            $('#account-1-placeholder').show();
-
-        };
-
-        $('#new-account-type').on('change', function () {
-            $('#iban').hide();
-            $('#issuing-bank').hide();
-            if (this.value == "current-bank" || this.value == "economy-bank") {
-                $('#iban').show();
-                $('#issuing-bank').show();
-            }
-            if (this.value == "deposit-bank") {
-                $('#issuing-bank').show();
-            }
-
-        });
+    $('#add-new-member-intellifamily').show();
+    numberOfAddedMembers++;
+    var fname = $('#init-intellifamily-fname').val();
+    var lname = $('#init-intellifamily-lname').val();
+    var initials = fname.trim().slice(0, 1) + lname.trim().slice(0, 1);
+    var fullName = fname + " " + lname;
+    var intelliFamilyMemberPlaceholderHTML = '<!--begin: intellifamily member placehonder--> <div class="kt-portlet__body" id="member-' + numberOfAddedMembers + '-placeholder" style="margin-top:20px;">'
+        + '<!--begin::Widget --> <div class="kt-widget kt-widget--user-profile-2"> <div class="kt-widget__head"> <div class="kt-widget__media">'
+        + '<img class="kt-hidden" src="./assets/media/users/100_1.jpg" alt="image">'
+        + '<div class="kt-widget__pic kt-widget__pic--info kt-font-info kt-font-boldest kt-hidden-" id="init-intellifamily-placeholder-initials">'
+        + initials + ' </div> </div> <div class="kt-widget__info"> <a href="#" class="kt-widget__username" id="init-intellifamily-placeholder-fullname">'
+        + fullName + '</a> <span class="kt-widget__desc"> Membru IntelliFamily </span> </div> </div> <div class="kt-widget__body">'
+        + '<div class="kt-widget__section"> </div> </div> <div class="kt-widget__footer"> <button type="button" class="btn btn-label-brand btn-lg btn-upper" onClick="removeIntelliFamilyMember(' + numberOfAddedMembers + ')">elimina</button> </div> </div> <!--end::Widget --> </div> <!--end: intellifamily member placehonder-->';
 
 
-    </script>
+    $('#placeholder-intellifamly').append(intelliFamilyMemberPlaceholderHTML);
+
+};
+
+var removeIntelliFamilyMember = function (memberId) {
+    $('#member-' + memberId + '-placeholder').hide();
+
+};
+
+/* STEP 3 */
+$('#new-account-1').hide();
+$('#iban').hide();
+$('#issuing-bank').hide();
+$('#account-1-placeholder').hide();
+
+var showAddAccount = function () {
+    $('#new-account-1').show();
+    $('#add-new-account').hide();
+
+};
+
+var numberOfAddedAccounts = 0;
+var addAccount = function () {
+    $('#new-account-1').hide();
+    $('#add-new-account').show();
+
+    numberOfAddedAccounts++;
+    var initials = $('#init-account-name').val().slice(0, 2);
+    var name = $('#init-account-name').val();
+    var accountType = $('#new-account-type').val();
+    var initialBalance = $('#initial-balance').val();
+    var currency = $('#account-currency').val();
+    var newAccountPlaceholderHTML = '<!--begin: intelliaccount account placehonder--> <div class="kt-portlet__body" id="account-' + numberOfAddedAccounts + '-placeholder" style="margin-top:20px;">'
+        + '<!--begin::Widget --> <div class="kt-widget kt-widget--user-profile-2"> <div class="kt-widget__head"> <div class="kt-widget__media">'
+        + '<img class="kt-hidden" src="./assets/media/users/100_1.jpg" alt="image">'
+        + '<div class="kt-widget__pic kt-widget__pic--info kt-font-info kt-font-boldest kt-hidden-">'
+        + initials + '</div> </div> <div class="kt-widget__info"> <a href="#" class="kt-widget__username">' + name + '</a> <span class="kt-widget__desc">'
+        + accountType + ' - ' + initialBalance + ' ' + currency + '</span> </div> </div> <div class="kt-widget__body"> <div class="kt-widget__section"> </div> </div> <div class="kt-widget__footer">'
+        + '<button type="button" class="btn btn-label-brand btn-lg btn-upper" onClick="removeAccount('+numberOfAddedAccounts+')">elimina</button> </div> </div> <!--end::Widget --> </div> <!--end: intelliaccount account placehonder-->';
+
+
+    $('#placeholder-accounts').append(newAccountPlaceholderHTML);
+};
+
+var removeAccount = function(accountNum){
+$('#account-' + accountNum + '-placeholder').hide();
+
+
+};
+
+$('#new-account-type').on('change', function () {
+    $('#iban').hide();
+    $('#issuing-bank').hide();
+    if (this.value == "current-bank" || this.value == "economy-bank") {
+        $('#iban').show();
+        $('#issuing-bank').show();
+    }
+    if (this.value == "deposit-bank") {
+        $('#issuing-bank').show();
+    }
+
+});
+
+	</script>
+
+    
 </body>
 
 <!-- end::Body -->
